@@ -3,9 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Payoo mobile app</title>
+    <!-- font awesome cdn -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- daisy ui cdn -->
+     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <!-- tailwind css cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- custom css linked -->
+     <link rel="stylesheet" href="./style.css">
 </head>
-<body>
-    <h1>this is a main page</h1>
+<body class="bg-[#F4F5F7]">
+    <div class="w-[425px] m-auto h-screen bg-[#fff] font-outfit">
+        <div class="account p-6 flex justify-between w-full h-24 items-center border-b border-[#838383]">
+            <div class="flex items-center">
+                <div>
+                    <img class="w-14" src="./assets/Group.png" alt="">
+                </div>
+                <div>
+                    <h3 class="text-[16px] font-bold text-[#080808]">$ <span>45000</span></h3>
+                    <p class="text-[#838383] text-[14px] font-normal">Available Balance</p>
+                </div>
+            </div>
+            <div>
+                <button class="btn text-[#838383]"><i class="fa-solid fa-arrow-right-from-bracket rotate-180"></i> Log Out</button>
+            </div>
+        </div>
+
+        <div class="px-6">
+            <h1 class=" pt-4 pb-2 text-[24px] text-[#080808] font-bold">🔥 Welcome to Payooo!</h1>
+            <p class="text-14px text-[#838383] font-normal">Enjoy easy and convenient financial services with us. Cashout charge is low and </p>
+        </div>
+
+        <div class="mt-4 grid grid-cols-3 gap-4 mx-6">
+            <div class="py-5 px-6 border border-[#838383] rounded-xl flex flex-col justify-center items-center">
+                <img src="./assets/wallet1.png" alt="">
+                <p class="text-[12px] mt-2">Add Money</p>
+            </div>
+
+            <div class="py-5 px-6 border border-[#838383] rounded-xl flex flex-col justify-center items-center">
+                <img src="./assets/send1.png" alt="">
+                <p class="text-[12px] mt-2">Cashout</p>
+            </div>
+
+            <div class="py-5 px-6 border border-[#838383] rounded-xl flex flex-col justify-center items-center">
+                <img src="./assets/money1.png" alt="">
+                <p class="text-[9px] mt-2">Transfer Money</p>
+            </div>
+
+            <div class="py-5 px-6 border border-[#838383] rounded-xl flex flex-col justify-center items-center">
+                <img src="./assets/bonus1.png" alt="">
+                <p class="text-[12px] mt-2">Get Bonus</p>
+            </div>
+
+            <div class="py-5 px-6 border border-[#838383] rounded-xl flex flex-col justify-center items-center">
+                <img src="./assets/purse1.png" alt="">
+                <p class="text-[12px] mt-2">Pay Bill</p>
+            </div>
+
+            <div class="py-5 px-6 border border-[#838383] rounded-xl flex flex-col justify-center items-center">
+                <img src="./assets/transaction1.png" alt="">
+                <p class="text-[12px] mt-2">Transactions</p>
+            </div>
+
+        </div>
+    </div>
 </body>
 </html>
