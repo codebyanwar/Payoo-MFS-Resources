@@ -13,15 +13,16 @@
     <!-- custom css linked -->
      <link rel="stylesheet" href="./style.css">
 </head>
-<body class="bg-[#F4F5F7]">
-    <div class="w-[425px] m-auto h-screen bg-[#fff] font-outfit">
+
+<body class="bg-black">
+    <div class="w-[425px] m-auto bg-white font-outfit">
         <div class="account p-6 flex justify-between w-full h-24 items-center border-b border-[#838383]">
             <div class="flex items-center">
                 <div>
                     <img class="w-14" src="./assets/Group.png" alt="">
                 </div>
                 <div>
-                    <h3 class="text-[16px] font-bold text-[#080808]">$ <span>45000</span></h3>
+                    <h3 class="text-[16px] font-bold text-[#080808]">$ <span id="available-balance">45000</span></h3>
                     <p class="text-[#838383] text-[14px] font-normal">Available Balance</p>
                 </div>
             </div>
@@ -67,6 +68,35 @@
             </div>
 
         </div>
+
+        <div class="px-6 bg-white">
+           <!-- all form section -->
+            <h2 class="text-[18px] font-semibold text-[#202020] mt-[20px] mb-4">Add Money</h2>
+
+            <form class="bg-[#E8E8EA] p-6 rounded-2xl">
+                <label class="text-[#525252] text-[16px] font-semibold mb-1.5" for="">Select A Bank</label>
+                <select id="bank" class="select outline-none rounded-[50px]">
+                    <option disabled selected>Select A Bank</option>
+                    <option>Brac</option>
+                    <option>DBBL</option>
+                    <option>Bank Asia</option>
+                    <option>NCC</option>
+                </select>
+
+                <label class="text-[#525252] text-[16px] font-semibold mb-2"  for="">Bank Account Number</label>
+                <input id="bank-account-number" class="w-full rounded-[50px] px-4 py-1.5 outline-none border-[#D1D1D1] bg-white" placeholder="Enter 11 digit account number" type="text" name="">
+
+                <label class="text-[#525252] text-[16px] font-semibold mb-2" for="">Amount to Add</label>
+                <input id="amount" class="w-full rounded-[50px] px-4 py-1.5 outline-none border-[#D1D1D1] bg-white" placeholder="Add Amount to withdraw" type="text" name="">
+
+                <label class="text-[#525252] text-[16px] font-semibold mb-2" for="">Pin Number</label>
+                <input id="pin-number" class="w-full rounded-[50px] px-4 py-1.5 outline-none border-[#D1D1D1] mb-3 bg-white" placeholder="Enter 4 digit pin number" type="text" name="">
+
+                <button id="add-money-btn" class="btn btn-active btn-primary w-full rounded-3xl text-[16px] text-outline font-medium border border-solid border-[#0874F2] bg-[#0874F2] text-white hover:bg-transparent hover:text-[#0874F2] duration-300">Add Money</button>
+            </form>
+        </div>
     </div>
+
+    <script src="./home.js"></script>
 </body>
 </html>
