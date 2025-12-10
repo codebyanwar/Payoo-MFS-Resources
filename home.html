@@ -38,32 +38,32 @@
 
             <div class="py-4 grid grid-cols-3 gap-3">
 
-                <div id="add-money-switch" class="px-4 py-5 border border-[#E6E6E6] rounded-2xl flex flex-col items-center cursor-pointer">
+                <div id="add-money-switch" class="px-4 py-5 border border-[#E6E6E6] rounded-2xl flex flex-col items-center cursor-pointer form-btn">
                     <img src="./assets/wallet1.png" alt="">
                     <p class="mt-1 text-[14px] text-[#525252]">Add Money</p>
                 </div>
 
-                <div id="cashout-switch" class="px-4 py-5 border border-[#E6E6E6] rounded-2xl flex flex-col items-center cursor-pointer">
+                <div id="cashout-switch" class="px-4 py-5 border border-[#E6E6E6] rounded-2xl flex flex-col items-center cursor-pointer form-btn">
                     <img src="./assets/send1.png" alt="">
                     <p class="mt-1 text-[14px] text-[#525252]">Cashout</p>
                 </div>
 
-                <div id="transfer-money-switch" class="px-3 py-5 border border-[#E6E6E6] rounded-2xl flex flex-col items-center cursor-pointer">
+                <div id="transfer-money-switch" class="px-3 py-5 border border-[#E6E6E6] rounded-2xl flex flex-col items-center cursor-pointer form-btn">
                     <img src="./assets/money1.png" alt="">
                     <p class="mt-1 text-[14px] text-[#525252]">Transfer Money</p>
                 </div>
 
-                <div id="get-bonus-switch" class="px-4 py-5 border border-[#E6E6E6] rounded-2xl flex flex-col items-center cursor-pointer">
+                <div id="get-bonus-switch" class="px-4 py-5 border border-[#E6E6E6] rounded-2xl flex flex-col items-center cursor-pointer form-btn">
                     <img src="./assets/bonus1.png" alt="">
                     <p class="mt-1 text-[14px] text-[#525252]">Get Bonus</p>
                 </div>
 
-                <div id="pay-bill-switch" class="px-4 py-5 border border-[#E6E6E6] rounded-2xl flex flex-col items-center cursor-pointer">
+                <div id="pay-bill-switch" class="px-4 py-5 border border-[#E6E6E6] rounded-2xl flex flex-col items-center cursor-pointer form-btn">
                     <img src="./assets/purse1.png" alt="">
                     <p class="mt-1 text-[14px] text-[#525252]">Pay Bill</p>
                 </div>
 
-                <div id="transection-history-switch" class="px-4 py-5 border border-[#E6E6E6] rounded-2xl flex flex-col items-center cursor-pointer">
+                <div id="transection-history-switch" class="px-4 py-5 border border-[#E6E6E6] rounded-2xl flex flex-col items-center cursor-pointer form-btn">
                     <img src="./assets/transaction1.png" alt="">
                     <p class="mt-1 text-[14px] text-[#525252]">Transactions</p>
                 </div>
@@ -76,7 +76,7 @@
 
         <!-- add money form start -->
 
-        <div style="display: none;" id="add-money-form" class="py-7 px-6">
+        <div id="add-money-form" class="py-7 px-6 payoo-form">
             <h2 class="text-2 font-bold pb-4">Add Money</h2>
 
             <form class="bg-white rounded-2xl p-5">
@@ -106,7 +106,7 @@
         <!-- add money form end -->
 
         <!-- cash out form start -->
-        <div style="display: none;" id="cashout-form" class="py-7 px-6">
+        <div style="display: none;" id="cashout-form" class="py-7 px-6 payoo-form">
             <h2 class="text-2 font-bold pb-4">CashOut</h2>
 
             <form class="bg-white rounded-2xl p-5">
@@ -127,7 +127,7 @@
         <!-- cash out form end -->
 
         <!-- Transfer Money form start -->
-        <div style="display: none;" id="transfer-money-form" class="py-7 px-6">
+        <div style="display: none;" id="transfer-money-form" class="py-7 px-6 payoo-form">
             <h2 class="text-2 font-bold pb-4">Transfer Money</h2>
 
             <form class="bg-white rounded-2xl p-5">
@@ -147,7 +147,7 @@
         <!-- Transfer Money form end -->
 
         <!-- Get bonus form start -->
-        <div style="display: none;" id="get-bonus-form" class="py-7 px-6">
+        <div style="display: none;" id="get-bonus-form" class="py-7 px-6 payoo-form">
             <h2 class="text-2 font-bold pb-4">Get Bonus</h2>
 
             <form class="bg-white rounded-2xl p-5">
@@ -161,7 +161,7 @@
         <!-- get bonus form end -->
 
         <!-- Pay Bill form start -->
-        <div style="display: none;" id="pay-bill-form" class="py-7 px-6">
+        <div style="display: none;" id="pay-bill-form" class="py-7 px-6 payoo-form">
             <h2 class="text-2 font-bold pb-4">Pay Bill</h2>
 
             <form class="bg-white rounded-2xl p-5">
@@ -190,8 +190,15 @@
         <!-- Pay Bill form end -->
 
         <!-- Transaction History section start -->
-        <div style="display: none;" id="transection-history-form" class="py-7 px-6">
-            <h2 class="text-2 font-bold pb-4">Transaction History</h2>
+        <div style="display: none;" id="transaction-container" class="py-7 px-6 payoo-form">
+                <div class="flex items-center justify-between">
+                    <h2 class="text-2 font-bold pb-4">Transaction History</h2>
+                    <p class="text-[#838383] pb-4">View All</p>
+                </div>
+
+                <div  id="transection-history-form">
+
+                </div>
         </div>
         <!-- Transaction History section end -->
         <!-- form section end -->
